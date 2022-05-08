@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact List</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+              Contact List
+            </a>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search-btn">Search</button>
+            </form>
+            <form class="form-inline" enctype="multipart/form-data">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="upload-btn">Upload</button>
+                <input type="file" id="file" aria-label="Upload">
+            </form>
+        </nav>
+        <div id="search-query">
+
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- <div class="col-sm-1"></div> -->
+                <div class="col-sm-4" id="contact-section">
+                    <button id="contact-add" class="btn btn-success">Add contact</button>
+                    <ul class="list-group" id="contact">
+                    </ul>
+                </div>
+                <div class="col-sm-8">
+                    <div id="details">
+                        <h1 id="name"></h1>
+                        <div id="address-section">
+                            <h4>Addresses</h4>
+                            <ul class="list-group" id="address">
+                            </ul>
+                            <button id="address-add" class="btn btn-success">Add address</button>
+                        </div>
+                        <div id="phone-section">
+                            <h4>Phones</h4>
+                            <ul class="list-group" id="phone"></ul>
+                            <button id="phone-add" class="btn btn-success">Add phone</button>
+                        </div>
+                        <div id="date-section">
+                            <h4>Dates</h4>
+                            <ul class="list-group" id="date"></ul>
+                            <button id="date-add" class="btn btn-success">Add date</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-1"></div> -->
+            </div>
+        </div>
+        <script src="assets/js/templates.js"></script>
+        <script src="assets/js/index.js"></script>
+    </body>
+</html>

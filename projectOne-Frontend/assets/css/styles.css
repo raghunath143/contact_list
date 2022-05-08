@@ -1,0 +1,60 @@
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: x-large;
+}
+
+#file {
+    color: white;
+    margin-left: 0.5rem;
+}
+
+#search-query {
+    margin: 4px;
+    text-align: center;
+}
+
+.col-sm-8 ul {
+    width: 90%;
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+}
+
+.row {
+    margin-top: 1rem;
+}
+
+#contact {
+	height:575px; 
+	overflow:hidden; 
+	overflow-y:scroll;
+}
+
+#contact:hover {
+    cursor: pointer;
+}
+
+
+.btn-success {
+    margin: 0.5rem;
+}
+
+form {
+    margin: 5px 0 5px 0;
+}
+
+form > button, li > button {
+    margin: 0rem;
+}
+
+li > .btn {
+    float: right;
+    border-radius: 40%;
+    margin: 0 2px 0 2px;
+}
+
+.mod {
+    background-color: rgb(181, 241, 241);
+}
